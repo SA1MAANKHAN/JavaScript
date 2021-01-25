@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Press Start 2P", cursive;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.name-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 8vh;
+
+  color: white;
+
+  background-color: #23689b;
+}
+.game-name {
+  transition: font-size 0.2s;
+}
+.game-name:hover {
+  font-size: 3rem;
+}
+.game-sec {
+  height: 86vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #487e95;
+}
+.active-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 20vh;
+  width: 20vh;
+  margin: 3rem;
+
+  border-radius: 2rem;
+
+  font-size: 5rem;
+  font-weight: bolder;
+  color: white;
+
+  background-color: rgba(163, 226, 255, 0.4);
+}
+.now-active {
+  background-color: rgba(70, 197, 255, 0.4);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
+}
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80vh;
+  width: 85vh;
+  margin: 3rem;
+
+  background-color: rgba(163, 226, 255, 0.4);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+}
+.game-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 5rem;
+}
+.game-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-box {
+  height: 20vh;
+  width: 20vh;
+
+  border-radius: 2rem;
+
+  margin: 3rem 2rem;
+  color: white;
+
+  background-color: rgba(35, 104, 155, 1);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.5s;
+  transition: height 0.2s;
+  transition: width 0.2s;
+}
+.game-box:hover {
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.8);
+  height: 20.2vh;
+  width: 20.2vh;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5;
+}
+
+.player-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.winner-player {
+  color: white;
+  font-size: 3rem;
+}
+/* reset */
+.reset-btn {
+  height: 20vh;
+  width: 25vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  transition: font-size 0.5s;
+  /* opacity: 1; */
+}
+.reset:hover {
+  font-size: 3.3rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif;
+
+  height: 6vh;
+  background-color: black;
+  color: white;
+  width: 100%;
+}

@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(world.jpg);
+  background-size: cover;
+}
+
+.header-h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 10vh;
+  width: 100vw;
+}
+
+.enter-country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  height: 20vh;
+}
+
+.country-submit {
+  background-color: #223b42;
+  -webkit-box-shadow: 5px 5px 5px #4c575a;
+          box-shadow: 5px 5px 5px #4c575a;
+  color: white;
+  height: 50px;
+  width: 80px;
+  margin: 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 3px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inp .label {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.inp .focus-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.inp input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 16px 12px 0 12px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  color: #000;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.inp input:hover {
+  background: rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.inp input:not(:-moz-placeholder-shown) + .label {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.inp input:not(:-ms-input-placeholder) + .label {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.inp input:not(:placeholder-shown) + .label {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
+          transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.inp input:focus {
+  background: rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+.inp input:focus + .label {
+  -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
+          transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.inp input:focus + .label + .focus-bg {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.card-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 62vh;
+  width: 100vw;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+
+.card-container {
+  height: 400px;
+  width: 300px;
+  background-color: rgba(100, 208, 223, 0.781);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card-flag-img {
+  border-radius: 10px 10px 0 0;
+  height: 180px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-container .card-info {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.card-container .card-info .other-info-1 {
+  margin-top: 1.2rem;
+}
+
+.card-container .card-info .info-country {
+  font-size: 2rem;
+  color: #1f1f1f;
+}
+
+.card-container .card-info .info-continent {
+  font-size: 1rem;
+  color: #1f1f1f;
+}
+
+.card-container .card-info .other-info {
+  color: #313131;
+  color: #1f1f1f;
+  margin: 0.8rem;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+  height: 8vh;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
