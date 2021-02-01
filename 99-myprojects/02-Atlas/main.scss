@@ -15,7 +15,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 body {
   height: 100vh;
@@ -44,22 +44,13 @@ body {
   margin-top: 2rem;
   height: 20vh;
 }
-.country-submit {
-  background-color: rgb(34, 59, 66);
-  box-shadow: 5px 5px 5px rgb(76, 87, 90);
 
-  color: white;
-  height: 50px;
-  width: 80px;
-  margin: 2rem;
-  border: none;
-  border-radius: 5px;
-}
-.inp {
-  position: relative;
+.input-container {
+  position: fixed;
   margin: auto;
+  height: 11rem;
+  max-width: 20rem;
   width: 100%;
-  max-width: 280px;
   border-radius: 3px;
   overflow: hidden;
 
@@ -67,90 +58,48 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.inp .label {
-  position: absolute;
-  top: 20px;
-  left: 12px;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 500;
-  transform-origin: 0 0;
-  transform: translate3d(0, 0, 0);
-  transition: all 0.2s ease;
-  pointer-events: none;
-}
-.inp .focus-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.05);
-  z-index: -1;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-.inp input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  border: 0;
-  font-family: inherit;
-  padding: 16px 12px 0 12px;
-  height: 56px;
-  font-size: 16px;
-  font-weight: 400;
-  background: rgba(0, 0, 0, 0.02);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
-  color: #000;
-  transition: all 0.15s ease;
-}
-.inp input:hover {
-  background: rgba(0, 0, 0, 0.04);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-}
-.inp input:not(:-moz-placeholder-shown) + .label {
-  color: rgba(0, 0, 0, 0.5);
-  transform: translate3d(0, -12px, 0) scale(0.75);
-}
-.inp input:not(:-ms-input-placeholder) + .label {
-  color: rgba(0, 0, 0, 0.5);
-  transform: translate3d(0, -12px, 0) scale(0.75);
-}
-.inp input:not(:placeholder-shown) + .label {
-  color: rgba(0, 0, 0, 0.5);
-  transform: translate3d(0, -12px, 0) scale(0.75);
-}
-.inp input:focus {
-  background: rgba(0, 0, 0, 0.05);
-  outline: none;
-  // box-shadow: inset 0 -2px 0 #0077ff;
-}
-.inp input:focus + .label {
-  // color: #0077ff;
-  transform: translate3d(0, -12px, 0) scale(0.75);
-}
-.inp input:focus + .label + .focus-bg {
-  transform: scaleX(1);
-  transition: all 0.1s ease;
+
+  .label {
+    color: rgb(255, 255, 255);
+    margin: 5px;
+  }
+  .input {
+    min-height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .country-submit {
+    background-color: rgb(34, 59, 66);
+    box-shadow: 5px 5px 5px rgb(76, 87, 90);
+
+    color: white;
+    min-height: 50px;
+    width: 80px;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
 }
 .card-sec {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  height: 62vh;
+  height: 100%;
   width: 100vw;
 
   transition: opacity 0.7s;
 }
 .card-container {
-  height: 400px;
+  height: 450px;
   width: 300px;
-  background-color: rgba(100, 208, 223, 0.781);
-  backdrop-filter: blur(5px);
+  // glass
+  background-color: rgba(255, 255, 255 0.05);
+  backdrop-filter: blur(10px);
+  border: solid 5px transparent;
+  background-clip: padding-box;
 
   margin: 1rem;
 
@@ -167,10 +116,11 @@ body {
   }
 
   .card-info {
+    padding: 10px;
     margin-left: 1rem;
     margin-top: 1rem;
     .other-info-1 {
-      margin-top: 1.2rem;
+      margin-top: 1.5rem;
     }
     .info-country {
       font-size: 2rem;
@@ -186,6 +136,9 @@ body {
       margin: 0.8rem;
     }
   }
+}
+.neighbour {
+  transform: scale();
 }
 .hidden {
   opacity: 0;

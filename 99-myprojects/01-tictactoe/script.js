@@ -1,3 +1,5 @@
+// mobile support
+
 "use strict";
 
 const gameBox = document.querySelectorAll(".game-box");
@@ -13,7 +15,8 @@ const winnerPlayer1 = document.querySelector(".winner-player-1");
 
 let activePlayer = 0;
 let roundWon;
-let audio = new Audio("chalk.mp3");
+let chalkAudio = new Audio("chalk.mp3");
+let winnerAudio = new Audio("Tada.mp3");
 
 const options = ["O", "X"];
 
@@ -24,13 +27,10 @@ gameBox.forEach((box) =>
   box.addEventListener("click", function () {
     //   if (box.textContent === "") {
     if (box.textContent === "" && !roundWon) {
-      audio.play();
+      chalkAudio.play();
       setTimeout(function () {
         box.textContent = options[activePlayer];
         gameState[box.id] = activePlayer;
-        console.log(gameState);
-        console.log("clicked");
-        console.log("active" + activePlayer);
 
         if (hasWon()) return;
 
@@ -75,7 +75,7 @@ function hasWon() {
     }
   }
   if (roundWon) {
-    console.log(`${activePlayer} has won`);
+    winnerAudio.play();
 
     if (activePlayer === 0) {
       resetPlayer1.classList.remove("hidden");
@@ -89,7 +89,7 @@ function hasWon() {
 }
 
 function resetGame() {
-  audio.play();
+  chalkAudio.play();
   setTimeout(() => {
     gameState = ["", "", "", "", "", "", "", "", ""];
     roundWon = false;

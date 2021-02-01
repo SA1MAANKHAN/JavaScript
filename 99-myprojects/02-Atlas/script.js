@@ -11,45 +11,65 @@ const populationCard = document.querySelector(".other-info-1");
 const langCard = document.querySelector(".other-info-2");
 const currencyCard = document.querySelector(".other-info-3");
 
-let country;
-const request = new XMLHttpRequest();
-submitBtn.addEventListener("click", function (e) {
-  //   e.preventDefault();
-
-  country = inputValidate(input.value);
-  input.value = "";
-  setTimeout(function () {
-    request.open("GET", `https://restcountries.eu/rest/v2/name/${country}`);
-    request.send();
-  }, 200);
-});
-// try {
-//   request.send();
-// } catch (err) {
-// }
-
-request.addEventListener("load", function () {
-  // console.log(this.responseText.length);
-  if (this.responseText.length < 100) {
-    return;
-  }
-
-  cardSec.classList.remove("hidden");
-  const [data] = JSON.parse(this.responseText);
-
-  // unhide
-
-  flagImg.src = data.flag;
-  countryCard.textContent = data.name;
-  continentCard.textContent = data.region;
-  populationCard.textContent = `🧑‍🤝‍🧑  ${+(data.population / 100000).toFixed(
-    2
-  )}M people`;
-  langCard.textContent = `🗣️  ${data.languages[0].name}`;
-  currencyCard.textContent = `💵  ${data.currencies[0].name}`;
-});
-
 function inputValidate(inp) {
   if (inp.toLowerCase() === "india") return "bharat";
   return inp;
 }
+
+function getCountryData(country) {
+  fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+    .then((response) => {
+      if (!response.ok)
+        throw new Error("country not found! , Try different Name ");
+
+      return response.json();
+    })
+    .then((data) => renderCountry(data[0]))
+    .catch((err) => alert(err));
+}
+
+function renderCountry(data) {
+  // unhide
+  cardSec.classList.remove("hidden");
+
+  flagImg.src = data.flag;
+  countryCard.textContent = data.name;
+  continentCard.textContent = data.region;
+  populationCard.textContent = `👩‍🦱  ${+(data.population / 100000).toFixed(
+    2
+  )}M people`;
+  langCard.textContent = `🗣️  ${data.languages[0].name}`;
+  currencyCard.textContent = `💵  ${data.currencies[0].name}`;
+}
+
+function whereAmI(lat, lang) {
+  fetch(`https://geocode.xyz/${lat},${lang}?geoit=json`)
+    .then((response) => {
+      if (!response.ok) throw new Error("Something went train, Try Again");
+      return response.json();
+    })
+    .then((data) => getCountryData(data.country))
+    .catch((err) => alert(err));
+}
+
+let country;
+
+submitBtn.addEventListener("click", function () {
+  country = inputValidate(input.value);
+  input.value = "";
+  getCountryData(country);
+});
+
+input.addEventListener("keyup", function (e) {
+  if (e.keyCode === 13) {
+    country = inputValidate(input.value);
+    input.value = "";
+    getCountryData(country);
+  }
+});
+
+// getscurrentlocation
+
+// navigator.geolocation.getCurrentPosition((data) =>
+//   whereAmI(data.coords.latitude, data.coords.longitude)
+// );
