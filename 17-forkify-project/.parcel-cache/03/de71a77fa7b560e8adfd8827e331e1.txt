@@ -1,10 +1,10 @@
 19260
-92/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/controller.31161da3.js.map1612162056313506609 0
-84/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/icons.93f57b83.svg1612162056245507941 0
-87/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/main.1924f756.css.map1612162056249507862 0
-83/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/logo.70a070ef.png1612162056245507941 0
-76/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/index.html1612162056245507941 0
-65/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist1612162056313506609 1
+92/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/controller.31161da3.js.map1612266638814834647 0
+84/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/icons.93f57b83.svg1612266637970824751 0
+87/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/main.1924f756.css.map1612266638558831645 0
+83/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/logo.70a070ef.png1612266638494830894 0
+76/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/index.html1612266638238827893 0
+65/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist1612266638818834693 1
 89/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/forkify-flowchart-part-2.png1603812714000000000 0
 97/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/is-buffer/test/basic.js1508967181000000000 0
 88/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/is-buffer/test1612073783178930895 1
@@ -2423,7 +2423,7 @@
 111/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/postcss-normalize-string/node_modules1612073785266744220 1
 110/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/postcss-normalize-string/LICENSE-MIT499162500000000000 0
 95/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/safer-buffer/tests.js499162500000000000 0
-88/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/controller.31161da3.js1612162056309506687 0
+88/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/controller.31161da3.js1612266638814834647 0
 94/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/safer-buffer/LICENSE499162500000000000 0
 95/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/safer-buffer/safer.js499162500000000000 0
 96/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/safer-buffer/Readme.md499162500000000000 0
@@ -3023,7 +3023,7 @@
 109/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/ora/node_modules/color-name/LICENSE499162500000000000 0
 94/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/wcwidth/combining.js1399846892000000000 0
 126/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/jsdom/lib/jsdom/living/generated/NavigatorPlugins.js499162500000000000 0
-78/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/sass/main.css1612108924455624973 0
+78/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/sass/main.css1612244729950512972 0
 101/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/ora/node_modules/color-name1612073786586626499 1
 113/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/purgecss/node_modules/postcss/README.md499162500000000000 0
 115/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/ora/node_modules/supports-color/readme.md499162500000000000 0
@@ -4203,7 +4203,7 @@
 97/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/lodash/fp/assignWith.js499162500000000000 0
 105/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/core-js/features/number/virtual1612073963572672656 1
 99/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/binary-extensions/license499162500000000000 0
-81/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/controller.js1612162020398260136 0
+81/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/controller.js1612264914908402445 0
 110/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/core/lib/UncommittedAsset.js499162500000000000 0
 116/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@nodelib/fs.walk/out/readers/async.spec.js499162500000000000 0
 104/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/binary-extensions/package.json1612073963652667081 0
@@ -4554,7 +4554,7 @@
 103/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@babel/runtime/helpers/get.js456789000000000000 0
 96/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/node-gyp-build/LICENSE499162500000000000 0
 102/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/whatwg-mimetype/lib/utils.js499162500000000000 0
-76/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/model.js1612159051475102775 0
+76/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/model.js1612266636818811300 0
 159/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/transformer-babel/node_modules/core-js/modules/esnext.symbol.pattern-match.js499162500000000000 0
 121/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/http-proxy/lib/http-proxy/passes/ws-incoming.js499162500000000000 0
 119/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/es-abstract/2017/CreateDataPropertyOrThrow.js499162500000000000 0
@@ -8087,7 +8087,7 @@
 157/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/transformer-babel/node_modules/core-js/modules/esnext.set.is-superset-of.js499162500000000000 0
 102/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/svgo/plugins/cleanupAttrs.js499162500000000000 0
 94/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/lodash.uniq/index.js1471109652000000000 0
-82/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/sass/main.css.map1612108924455624973 0
+82/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/sass/main.css.map1612244729950512972 0
 112/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/core-js/es/reflect/get-prototype-of.js499162500000000000 0
 139/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/uncss/node_modules/postcss-selector-parser/dist/__tests__/tags.js499162500000000000 0
 99/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/es-abstract/.editorconfig499162500000000000 0
@@ -8590,7 +8590,7 @@
 106/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@nodelib/fs.scandir/src/index.ts499162500000000000 0
 92/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/isexe/package.json1612073786758611172 0
 105/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/caniuse-lite/data/regions/VI.js499162500000000000 0
-87/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/views/recipeView.js1612099946277844933 0
+87/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/views/recipeView.js1612261143920049988 0
 100/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/alphanum-sort/package.json1612073787074583022 0
 92/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/lodash/includes.js499162500000000000 0
 105/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/utils/lib/countLines.js499162500000000000 0
@@ -12240,7 +12240,7 @@
 88/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/isexe/index.js1490229856000000000 0
 101/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/core-js/es/function/bind.js499162500000000000 0
 153/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/transformer-babel/node_modules/core-js/features/array/virtual/values.js499162500000000000 0
-88/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/views/resultsView.js1612158814124942992 0
+88/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/views/resultsView.js1612264975343068711 0
 102/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/core-js/es/function/index.js499162500000000000 0
 92/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/onetime/index.d.ts499162500000000000 0
 92/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/html-comment-regex1612073786846603330 1
@@ -13432,7 +13432,7 @@
 142/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/transformer-babel/node_modules/core-js/stable/string/trim.js499162500000000000 0
 124/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/jsdom/lib/jsdom/living/generated/WheelEventInit.js499162500000000000 0
 130/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/util.promisify/node_modules/es-abstract/2015/IsRegExp.js499162500000000000 0
-81/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/views/View.js1612158781713182003 0
+81/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/src/js/views/View.js1612264868901419675 0
 144/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/transformer-babel/node_modules/core-js/stable/string/anchor.js499162500000000000 0
 145/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/transformer-babel/node_modules/core-js/stable/string/italics.js499162500000000000 0
 111/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/caniuse-lite/data/features/netinfo.js499162500000000000 0
@@ -18099,7 +18099,7 @@
 147/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/regenerate-unicode-properties/Script_Extensions/Inscriptional_Parthian.js499162500000000000 0
 104/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@parcel/watcher/src/binding.cc499162500000000000 0
 133/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/regenerate-unicode-properties/Script_Extensions/Georgian.js499162500000000000 0
-83/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/main.1924f756.css1612162056245507941 0
+83/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/main.1924f756.css1612266638218827658 0
 109/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@nodelib/fs.walk/out/index.d.ts.map499162500000000000 0
 95/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/lodash/_setToPairs.js499162500000000000 0
 99/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/@iarna/toml/lib/parser.js499162500000000000 0
@@ -19207,7 +19207,7 @@
 91/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/svgo/CHANGELOG.md499162500000000000 0
 127/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/core-js/internals/call-with-safe-iteration-closing.js499162500000000000 0
 91/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/svgo/README.ru.md499162500000000000 0
-86/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/favicon.903d3bf5.png1612162056245507941 0
+86/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/dist/favicon.903d3bf5.png1612266638166827048 0
 82/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/svgo/bin1612073778295369789 1
 88/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/svgo/README.md499162500000000000 0
 86/home/salmaan/Documents/GitHub/JavaScript/17-forkify-project/node_modules/svgo/plugins1612073778955310284 1

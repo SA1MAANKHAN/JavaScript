@@ -10,38 +10,152 @@
   justify-content: center;
   align-items: center;
 }
+body {
+  height: 100vh;
+  background-image: url("assets/imgs/glass.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .name {
   @include flex();
 
   height: 8vh;
   width: 100%;
+
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0;
+
+  animation: trivia 1s forwards 0.5s ease-in-out;
 }
+@keyframes trivia {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(20px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .trivia-sec {
   @include flex();
   flex-direction: column;
+  margin-top: 2rem;
 }
-.btn-container {
+.tab-btn-container {
   @include flex();
   justify-content: space-around;
-  width: 100%;
+  width: 80vw;
+  animation: startAnimate 0.8s forwards 0s ease-in-out;
+
+  @media (min-width: 800px) {
+    width: 40vw;
+  }
 
   .btn {
-    padding: 0.5rem 1rem;
-    width: 5rem;
+    padding: 0.6rem 1rem;
+    width: 5.5rem;
+
+    color: white;
+
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: transform 0.2s;
   }
-  .active-btn:hover {
+  .btn:focus {
+    outline: none;
+  }
+  .active-tab {
     transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
+
 .input-container {
   @include flex();
   flex-direction: column;
+  margin-top: 2rem;
+  color: white;
+  transition: display;
+  animation: startAnimate 0.8s forwards 0.3s ease-in-out;
+
   .input {
-    @include flex();
     flex-direction: column;
+    display: none;
+
+    .label {
+      margin: 1rem;
+    }
+    .enter-input {
+      @include flex();
+      padding: 0.5rem 1rem;
+      width: 11rem;
+      border-radius: 10px;
+    }
+    .btn-submit {
+      padding: 0.5rem 1rem;
+      margin: 1rem;
+      color: white;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      transition: transform 0.2s;
+    }
+    .btn-submit:focus {
+      outline: none;
+    }
+    .btn-submit:active {
+      transform: scale(1.2);
+    }
+  }
+  .active-input {
+    @include flex();
+  }
+}
+.fact-container {
+  @include flex();
+  flex-direction: column;
+  padding: 1.2rem 2rem;
+  color: white;
+  animation: startAnimate 0.8s forwards 0.6s ease-in-out;
+
+  border: solid 2px transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  background-clip: padding-box;
+
+  .fact-h3 {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}
+
+@keyframes startAnimate {
+  0% {
+    transform: rotate(0) translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
   }
 }
 footer {
+  @include flex();
   position: absolute;
   bottom: 0;
+
+  backdrop-filter: blur(20px);
+  background-clip: padding-box;
+
+  height: 5vh;
+  width: 100%;
+  color: white;
 }
