@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: rgb(241, 110, 233);
+  background: radial-gradient(
+    circle,
+    rgba(241, 110, 233, 1) 0%,
+    rgba(255, 165, 240, 1) 28%,
+    rgba(255, 165, 240, 1) 63%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-page {
+  @include flex();
+  height: 100vh;
+  background-color: rgb(39, 34, 85);
+  animation: yourAnimation 2s forwards 0.5s linear;
+
+  @keyframes yourAnimation {
+    0% {
+      transform: translateX(200px);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-50px);
+      opacity: 1;
+      pointer-events: none;
+    }
+    100% {
+      transform: rotate(0);
+      opacity: 0;
+    }
+  }
+
+  .welcome {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+  }
+}
+
+.header {
+  @include flex();
+  width: 100%;
+}
+
+.logo {
+  height: 6rem;
+  width: 21rem;
+  background-image: url("../logo/default.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.homepage {
+  @include flex();
+}
+
+.cards-container {
+  display: grid;
+
+  width: 60%;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: repeat(1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  .card {
+    @include flex();
+    height: 10rem;
+    width: 15rem;
+    margin: 1rem;
+
+    border-radius: 20px;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+    box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.7);
+  }
+
+  .card-food-fact,
+  .card-search-food {
+    background-image: url(../imgs/food-1.jpg);
+    background-size: cover;
+  }
+  .card-food-joke,
+  .card-6 {
+    background-image: url(../imgs/food-2.jpg);
+    background-size: cover;
+  }
+  .card-search-recipies,
+  .card-7 {
+    background-image: url(../imgs/food-3.jpg);
+    background-size: cover;
+  }
+  .card-random-recipe,
+  .card-8 {
+    background-image: url(../imgs/food-4.jpg);
+    background-size: cover;
+  }
+}
+
+footer {
+  @include flex();
+
+  background-color: black;
+  color: white;
+
+  height: 5vh;
+  width: 100%;
+}

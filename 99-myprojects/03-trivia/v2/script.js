@@ -1,5 +1,7 @@
 "use strict";
 
+// add spoonacular trivia
+
 // const input = document.querySelector(".enter-input");
 // const number = document.querySelector(".number");
 // const submitBtn = document.querySelector(".btn-submit");

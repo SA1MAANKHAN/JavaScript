@@ -1,0 +1,17 @@
+{
+  "name": "08-marvel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "parcel": "^2.0.0-beta.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

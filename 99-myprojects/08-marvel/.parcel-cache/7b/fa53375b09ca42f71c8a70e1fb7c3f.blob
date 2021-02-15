@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="0b7bf2800366431146da8279793bd18f">
+    <script type="module" defer="" src="294a0caa4abf215c7ceceb457cf245a5"></script>
+    <!-- font -->
+    <link rel="preconnect" href="da9afb61e15e5caa1c8af2c6f046c478">
+    <link href="165b6bf4956a82c2159927b92955a539" rel="stylesheet">
+    <title>Marvel</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="marvel-logo">MARVEL</h1>
+    </header>
+    <section class="section">
+      <form class="search-form">
+        <input type="text" placeholder="Name of the Character:" class="name-input" name="name"><br><br>
+        <input type="submit" class="name-btn" value="Submit">
+      </form>
+
+      <div class="card-container">
+        <!-- <div class="card">
+          <img src="" alt="" class="hero-img" />
+          <h2 class="hero-name"></h2>
+          <p class="hero-description"></p>
+          <button class="get-comics">
+            <a href="" class="get-comics-link">Get comics</a>
+          </button>
+        </div> -->
+      </div>
+    </section>
+ <footer>© 2021, Made by Salmaan</footer>  </body>
+</html>
