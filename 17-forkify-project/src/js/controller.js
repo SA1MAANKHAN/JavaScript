@@ -6,7 +6,6 @@ import paginationView from "./views/paginationView.js";
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
-import { async } from "regenerator-runtime";
 // -------api --------
 // https://forkify-api.herokuapp.com/v2
 
